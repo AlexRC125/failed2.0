@@ -1,0 +1,7 @@
+.fail {
+    transform: translate( 0px, 100px) rotate(20deg);
+    opacity: 50%;
+  }
+  a {
+    color: chocolate;
+}
