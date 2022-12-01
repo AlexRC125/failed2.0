@@ -4,41 +4,44 @@ a {
 div {
     width: 300px;
     height: 100px;
-    background: darkblue;
+    background-color: lightblue;
     border: 1px solid purple;
     border-radius: 40px;
-    color: yellowgreen;
+    color: black;
     text-align: center;
 }
 #myDiv {
     transform: rotateX(0deg);
-    transition-duration: 2s;
+    transition: transform 3s, backgound-color 10s, color 4s;
 }
 
 #myDiv:hover {
-    transform: rotateX(125deg);
+    transform: rotateX(150deg);
+    background-color: teal;
+    color: white;
 }
 
 #myDiv2 {
     transform: rotateY(0deg);
-    transition-duration: 2s;
+    transition: transform 5s;
+    transition-timing-function: ease-in;
 }
 
 #myDiv2:hover {
-    transform: rotateY(125deg);
+    transform: translate(500px,0px);
 }
 #myDiv3 {
     transform: rotateZ(0deg);
     transition-duration: 2s;
+    transition-delay: 3s;
 }
 
 #myDiv3:hover {
-    transform: rotateZ(125deg);
+    transform: rotateZ(180deg);
 }
 img {
-    transform: rotateX(0deg);
-    transition-duration: 2s;
+    transform: rotateY(150deg);
 }
 img:hover {
-    transform: rotateY(125deg);
+    transform: rotateY(0deg);
 }
